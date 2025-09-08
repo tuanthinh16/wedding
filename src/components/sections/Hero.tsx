@@ -5,7 +5,12 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { weddingData, formatDate } from '@/data';
 import HeartBackground from '@/components/HeartBackground';
+import { Dancing_Script, Playwrite_VN } from 'next/font/google';
 
+const dancingScript = Dancing_Script({
+    subsets: ["latin", "vietnamese"],
+    weight: [ "700"],
+  }); 
 export default function Hero() {
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef<HTMLDivElement>(null);
@@ -46,13 +51,13 @@ export default function Hero() {
                     <CardContent className="p-8 md:p-16 text-center">
                         <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
                             }`}>
-                            <p className="text-teal-600 font-medium text-lg mb-4 tracking-wide">
-                                We're Getting Married
+                            <p className="text-teal-600 font-bold text-lg mb-4 tracking-wide font-title text-4xl">
+                                {"We're Getting Married"}
                             </p>
 
-                            <h1 className="text-4xl md:text-6xl font-serif text-gray-800 mb-6 leading-tight">
+                            <h1 className={`text-4xl md:text-6xl font-serif text-gray-800 mb-6 leading-tight ${dancingScript.className}`}>
                                 {weddingData.couple.groom.name}
-                                <span className="block text-teal-500 text-3xl md:text-4xl my-4">&</span>
+                                <span className="block font-bold text-3xl md:text-4xl my-4">&</span>
                                 {weddingData.couple.bride.name}
                             </h1>
 

@@ -39,7 +39,7 @@ export default function Gallery() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
-                    <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">
+                    <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6 font-title font-bold">
                         Khoảnh Khắc Đặc Biệt
                     </h2>
                     <div className="w-24 h-1 bg-teal-500 mx-auto mb-8"></div>

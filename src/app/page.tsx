@@ -12,7 +12,7 @@ import MusicPlayer from "@/components/MusicPlayer";
 export default function Home() {
   return (
     <>
-      <LoadingScreen />
+      
       <div className="min-h-screen">
         <Navigation />
 

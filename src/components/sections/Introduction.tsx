@@ -33,7 +33,7 @@ export default function Introduction() {
             <div className="container mx-auto px-4">
                 <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
-                    <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">
+                    <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6 font-title font-bold">
                         Câu Chuyện Tình Yêu
                     </h2>
                     <div className="w-24 h-1 bg-teal-500 mx-auto mb-8"></div>
@@ -47,7 +47,7 @@ export default function Introduction() {
                             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
                                 <span className="text-4xl text-white font-bold">TT</span>
                             </div>
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">{weddingData.couple.groom.name}</h3>
+                            <h3 className="text-4xl font-semibold text-gray-800 mb-4 font-name">{weddingData.couple.groom.name}</h3>
                             <p className="text-gray-600 leading-relaxed mb-4">
                                 Một người đàn ông yêu công nghệ, đam mê lập trình và luôn tìm kiếm
                                 những điều mới mẻ trong cuộc sống. Anh tin rằng tình yêu chân thành
@@ -68,7 +68,7 @@ export default function Introduction() {
                             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center">
                                 <span className="text-4xl text-white font-bold">CD</span>
                             </div>
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">{weddingData.couple.bride.name}</h3>
+                            <h3 className="text-4xl font-semibold text-gray-800 mb-4 font-name">{weddingData.couple.bride.name}</h3>
                             <p className="text-gray-600 leading-relaxed mb-4">
                                 Một cô gái xinh đẹp, tài năng và có trái tim nhân hậu. Cô luôn mang
                                 lại ánh sáng và niềm vui cho những người xung quanh, đặc biệt là
@@ -88,7 +88,7 @@ export default function Introduction() {
                     }`}>
                     <Card className="bg-gradient-to-r from-teal-50 via-white to-rose-50 border-0 shadow-xl">
                         <CardContent className="p-12">
-                            <h3 className="text-3xl font-serif text-gray-800 mb-8">Chúng Tôi Gặp Nhau</h3>
+                            <h3 className="text-3xl text-gray-800 mb-8 font-title font-">Chúng Tôi Gặp Nhau</h3>
                             <p className="text-lg text-gray-600 leading-relaxed mb-6">
                                 {weddingData.weddingInfo.story}
                             </p>

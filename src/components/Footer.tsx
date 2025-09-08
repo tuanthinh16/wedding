@@ -37,7 +37,7 @@ export default function Footer() {
                     <div className="mb-8">
                         <div className="flex items-center justify-center space-x-2 mb-4">
                             <Heart className="w-8 h-8 text-teal-300" />
-                            <h3 className="text-2xl font-serif">
+                            <h3 className="text-8xl font-name">
                                 {weddingData.couple.groom.name} & {weddingData.couple.bride.name}
                             </h3>
                         </div>
