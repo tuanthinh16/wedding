@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { weddingData, formatDate } from '@/data';
+import HeartBackground from '@/components/HeartBackground';
 
 export default function Hero() {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,14 +32,15 @@ export default function Hero() {
             ref={heroRef}
             className="min-h-screen flex items-center justify-center bg-gradient-to-b from-teal-50 to-white relative overflow-hidden"
         >
+            {/* 3D Heart Background */}
+            <HeartBackground opacity={0.2} />
+
             {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-teal-100 rounded-full opacity-30 animate-pulse"></div>
                 <div className="absolute top-1/3 -right-20 w-60 h-60 bg-teal-200 rounded-full opacity-20 animate-pulse delay-1000"></div>
                 <div className="absolute bottom-20 left-1/4 w-32 h-32 bg-teal-100 rounded-full opacity-25 animate-pulse delay-500"></div>
-            </div>
-
-            <div className="container mx-auto px-4 relative z-10">
+            </div>            <div className="container mx-auto px-4 relative z-10">
                 <Card className={`max-w-4xl mx-auto bg-white/80 backdrop-blur-sm border-teal-100 shadow-2xl transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     <CardContent className="p-8 md:p-16 text-center">

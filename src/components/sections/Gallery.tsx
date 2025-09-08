@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { weddingData } from '@/data';
+import BeatingHearts from '@/components/BeatingHearts';
 
 export default function Gallery() {
     const [isVisible, setIsVisible] = useState(false);
@@ -30,9 +31,12 @@ export default function Gallery() {
     return (
         <section
             ref={galleryRef}
-            className="py-20 bg-gradient-to-b from-white to-teal-50"
+            className="py-20 bg-gradient-to-b from-white to-teal-50 relative"
         >
-            <div className="container mx-auto px-4">
+            {/* Beating Hearts Background */}
+            <BeatingHearts count={6} className="opacity-30" />
+
+            <div className="container mx-auto px-4 relative z-10">
                 <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">
